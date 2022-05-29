@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrasi</title>
+</head>
+<body>
+    <form action="contact.php" method="POST">
+        <fieldset>
+        <legend>Registrasi</legend>
+        <p>
+            <label>Username:</label>
+            <input type="text" name="username" placeholder="Username..." />
+        </p>
+        <p>
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="Passowrd..." />
+        </p>
+        <p>
+            <label>Jenis kelamin:</label>
+            <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+            <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+        </p>
+        <p>
+            <label>Agama:</label>
+            <select name="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+            </select>
+        </p>
+        <p>
+            <label for="isian-tanggal-lahir">Tanggal Lahir</label> <br>
+            <input
+            id="isian-tanggal-lahir"
+            name="tanggal_lahir"
+            type="date"
+            >
+        </p>
+        <p>
+            <form name="form1">Mata Pelajaran Yang Diminati:<br>
+                <input type="checkbox" name="mp" id="mp" value="PW" checked="checked">Pemrograman Web <br>
+                <input type="checkbox" name="mp" id="mp" value="JD">Jaringan Dasar <br>
+                <input type="checkbox" name="mp" id="mp" value="SO">Sistem Operasi <br>
+                <input type="checkbox" name="mp" id="mp" value="PK">Perakitan Komputer <br>
+            </form>
+        </p>
+        <p>
+            <label>Biografi:</label>
+            <textarea name="biografi"></textarea>
+        </p>
+        <p>
+            <label>Upload Foto</label>
+            <form method="post" action="" enctype="multipart/form-data">
+                    <input type="file" name="foto" />
+            </form>
+        </p>
+        <p>
+            <input type="reset" name="rst" id="rst" value="Bersihkan Semua Data" />
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Submit" />
+        </p>
+        </fieldset>
+    </form>
+</body>
+</html>
